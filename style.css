@@ -1,0 +1,227 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Style+Script&display=swap');
+
+/* wildcard */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: pointer;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #6495ed, #000);
+  font-family: 'Indie Flower';
+  line-height: 1.5;
+  color: #000;
+}
+
+/* header section */
+header {
+  font-family: 'Style Script';
+  background-color: #f1f1f1;
+  text-align: center;
+  background-image: url('imgs/header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* h1 within the header */
+header h1 {
+  font-size: 7.0rem;
+  margin: 0;
+  padding: 163px;
+  color: #800020;
+}
+
+/* h2 within the header */
+header h2 {
+  font-size: 3.9rem;
+  color: #f1f1f1;
+  margin: 0;
+}
+
+/* (abbr) within h2 */
+header h2 abbr {
+  cursor: help; /* changes cursor to a question mark for indicating it's an abbreviation */
+}
+
+/* summary section */
+.summary {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #800020;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+/* links within the summary section */
+.summary a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* hover for links within the summary section */
+.summary a:hover {
+  color: #ffcc5c;
+  text-decoration: underline;
+}
+
+/* (abbr) within the summary section */
+.summary abbr {
+  cursor: help; /* changes cursor to a question mark for indicating it's an abbreviation */
+  color: palevioletred;
+}
+
+/* preamble section */
+.preamble {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #f1f1f1;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+/* (abbr) within the preamble section */
+.preamble abbr {
+  cursor: help; /* changes cursor to a question mark for indicating it's an abbreviation */
+  color: palevioletred;
+}
+
+/* h3 within the preamble section */
+.preamble h3 {
+  color: #d260ff;
+  font-size: 1.5em;
+}
+
+/* main content section using CSS Grid */
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  color: #5158ff;
+}
+
+/* "supporting" class within the main section */
+.main .supporting {
+  background-color: #f1f1f1;
+  color: #5158ff;
+  padding: 20px;
+}
+
+/* "explanation" class within the main section */
+.main .explanation {
+  background-color: #f1f1f1;
+  color: #5158ff;
+  padding: 20px;
+}
+
+/* (abbr) within the main section */
+.main abbr {
+  cursor: help; /* changes cursor to a question mark for indicating it's an abbreviation */
+  color: palevioletred;
+}
+
+/* h3 within the main section */
+.main h3 {
+  color: #8e4256;
+  font-size: 1.7em;
+}
+
+/* paragraphs within the main section */
+.main p {
+  font-size: 1.3em;
+}
+
+/* links */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* hover styles for links */
+a:hover {
+  text-decoration: underline;
+  color: #8e4256;
+}
+
+/* footer section */
+footer {
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+
+/* sidebar section */
+.sidebar {
+  background-image: url('imgs/footer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5px;
+  padding-top: 30px;
+  color: #f1f1f1;
+  font-size: 1.37em;
+  display: block;
+  font-weight: bolder;
+}
+
+/* "design-name" class within the sidebar section */
+.sidebar .design-name {
+  font-weight: bold;
+  color: #000;
+}
+
+/* "designer-name" class within the sidebar section */
+.sidebar .designer-name {
+  color: #f1f1f1;
+}
+
+/* h3 within the sidebar section */
+.sidebar h3 {
+  font-size: 1.5em;
+}
+
+/* list items (li) */
+li {
+  list-style: '🎀'; /* Custom list style */
+}
+
+/* even-numbered paragraphs */
+p:nth-child(even) {
+  color: #000;
+}
+
+/* links with a "title" attribute */
+a[title] {
+  font-weight: bold;
+}
+
+/* first paragraph within a div */
+div p:first-of-type {
+  font-size: 25px;
+}
+
+/* last paragraph within a div */
+div p:last-of-type {
+  font-size: 20px;
+}
+
+/* last list item in an unordered list */
+ul li:last-of-type {
+  color: #5158ff;
+}
