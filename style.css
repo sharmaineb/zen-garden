@@ -152,6 +152,7 @@ header h2 abbr {
 a {
   color: #000;
   text-decoration: none;
+  font-weight: bolder;
 }
 
 /* hover styles for links */
@@ -172,12 +173,20 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 5px;
-  padding-top: 30px;
+  /* padding: 5px; */
+  padding-top: 20px;
+  padding-bottom: 0.5em;
+  margin-top: 10px;
   color: #f1f1f1;
   font-size: 1.37em;
   display: block;
   font-weight: bolder;
+}
+
+.sidebar .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; 
 }
 
 /* "design-name" class within the sidebar section */
@@ -194,6 +203,11 @@ footer {
 /* h3 within the sidebar section */
 .sidebar h3 {
   font-size: 1.5em;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+  color: #8e4256;
 }
 
 /* list items (li) */
@@ -224,4 +238,25 @@ div p:last-of-type {
 /* last list item in an unordered list */
 ul li:last-of-type {
   color: #5158ff;
+}
+
+.main.supporting {
+  /* border: 1.5px solid #000;  */
+  padding: 20px; 
+  padding-bottom: 1em;
+}
+
+p[role="contentinfo"] {
+  color: #0077cc; 
+}
+
+
+.requirements a:hover {
+  text-decoration: underline;
+  color: #8e4256;
+}
+
+.requirements {
+  border: 2px solid black;
+  padding: 20px;
 }
